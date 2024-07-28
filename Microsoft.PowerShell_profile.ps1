@@ -64,7 +64,6 @@ function Update-PowerShell {
         Write-Host "Skipping PowerShell update check due to GitHub.com not responding within 1 second." -ForegroundColor Yellow
         return
     }
-
     try {
         Write-Host "Checking for PowerShell updates..." -ForegroundColor Cyan
         $updateNeeded = $false
@@ -81,7 +80,7 @@ function Update-PowerShell {
             winget upgrade "Microsoft.PowerShell" --accept-source-agreements --accept-package-agreements
             Write-Host "PowerShell has been updated. Please restart your shell to reflect changes" -ForegroundColor Magenta
         } else {
-            Write-Host "Your PowerShell is up to date." -ForegroundColor Green
+            Write-Host "Your PowerShell is up to date.(PS:$currentVersion)" -ForegroundColor Green
         }
     } catch {
         Write-Error "Failed to update PowerShell. Error: $_"
@@ -93,7 +92,16 @@ Update-PowerShell
 # Admin Check and Prompt Customization
 $isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 function prompt {
-    if ($isAdmin) { "[" + (Get-Location) + "] # " } else { "[" + (Get-Location) + "] $ " }
+    Write-Host -NoNewLine "p" -ForegroundColor $foregroundColor
+    Write-Host -NoNewLine "$" -ForegroundColor Green
+    Write-Host -NoNewLine "[" -ForegroundColor Yellow
+    Write-Host -NoNewLine ("{0}" -f (Get-Date) + " : " +(Get-Location)) -ForegroundColor $foregroundColor
+    Write-Host -NoNewLine "]" -ForegroundColor Yellow
+    if ($isAdmin) {
+        Write-Host -NoNewLine " # " -ForegroundColor Red
+    } else { 
+        Write-Host -NoNewLine " $ " -ForegroundColor Red
+    } 
 }
 $adminSuffix = if ($isAdmin) { " [ADMIN]" } else { "" }
 $Host.UI.RawUI.WindowTitle = "PowerShell {0}$adminSuffix" -f $PSVersionTable.PSVersion.ToString()
@@ -441,4 +449,8 @@ pst - Retrieves text from the clipboard.
 Use 'Show-Help' to display this help message.
 "@
 }
+$time = Get-Date
+$curUser = (Get-ChildItem Env:\USERNAME).Value
+Write-Host "Greetings, $curUser!" -ForegroundColor $foregroundColor
+Write-Host "It is: $($time.ToLongDateString())"
 Write-Host "Use 'Show-Help' to display help"

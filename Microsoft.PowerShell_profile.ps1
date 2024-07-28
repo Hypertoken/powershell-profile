@@ -88,7 +88,7 @@ function Update-PowerShell {
 }
 Update-PowerShell
 
-
+$foregroundColor = 'white'
 # Admin Check and Prompt Customization
 $isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 function prompt {

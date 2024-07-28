@@ -94,7 +94,7 @@ function prompt {
     Write-Host -NoNewLine "p" -ForegroundColor white
     Write-Host -NoNewLine "$" -ForegroundColor Green
     Write-Host -NoNewLine "[" -ForegroundColor Yellow
-    Write-Host -NoNewLine ("{0}" -f (Get-Date) + " : " +(Get-Location)) -ForegroundColor white
+    Write-Host -NoNewLine ("{0}" -f (Get-Date) + " : " + (Get-Location)) -ForegroundColor white
     Write-Host -NoNewLine "]" -ForegroundColor Yellow
     if ($isAdmin) {
         Write-Host -NoNewLine " # " -ForegroundColor Red

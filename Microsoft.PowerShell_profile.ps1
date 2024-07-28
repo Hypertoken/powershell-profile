@@ -88,14 +88,13 @@ function Update-PowerShell {
 }
 Update-PowerShell
 
-$foregroundColor = 'white'
 # Admin Check and Prompt Customization
 $isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 function prompt {
-    Write-Host -NoNewLine "p" -ForegroundColor $foregroundColor
+    Write-Host -NoNewLine "p" -ForegroundColor white
     Write-Host -NoNewLine "$" -ForegroundColor Green
     Write-Host -NoNewLine "[" -ForegroundColor Yellow
-    Write-Host -NoNewLine ("{0}" -f (Get-Date) + " : " +(Get-Location)) -ForegroundColor $foregroundColor
+    Write-Host -NoNewLine ("{0}" -f (Get-Date) + " : " +(Get-Location)) -ForegroundColor white
     Write-Host -NoNewLine "]" -ForegroundColor Yellow
     if ($isAdmin) {
         Write-Host -NoNewLine " # " -ForegroundColor Red
@@ -337,7 +336,7 @@ function Get-Theme {
             return
         }
     } else {
-        oh-my-posh init pwsh --config https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/cobalt2.omp.json | Invoke-Expression
+        oh-my-posh init pwsh --config https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/dracula.omp.json | Invoke-Expression
     }
 }
 

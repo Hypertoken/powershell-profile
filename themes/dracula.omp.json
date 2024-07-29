@@ -39,8 +39,7 @@
           "style": "diamond",
           "leading_diamond": " \ue0b0",
           "trailing_diamond": "\ue0b0",
-          "foreground": "#ffffff",
-          "background": "#d53c14",
+          "background": "#50fa7b",
           "template": " "
         },
         {

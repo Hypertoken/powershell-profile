@@ -21,7 +21,6 @@
           },
           "style": "diamond",
           "template": " \uf4ab {{ .CurrentDate | date .Format }} ",
-          "trailing_diamond": "\ue0b0",
           "type": "time"
         },
         {

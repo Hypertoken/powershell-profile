@@ -28,7 +28,7 @@
             "{{ if lt .Sgv 60 }}#000000{{ end }}",
             "#000000"
           ],
-          "leading_diamond": "\ue0b6",
+          "leading_diamond": "\ue0b0",
           "trailing_diamond": "\ue0b0",
           "template": " {{ .Sgv }}{{ .TrendIcon }}",
           "properties": {

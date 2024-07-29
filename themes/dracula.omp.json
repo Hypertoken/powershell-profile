@@ -55,7 +55,7 @@
             "style": "powerline",
             "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
             "type": "node"
-          },
+          }
         ],
         "type": "prompt"
       },

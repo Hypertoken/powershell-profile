@@ -10,14 +10,15 @@
           "background": "#6272a4",
           "foreground": "#f8f8f2",
           "leading_diamond": "\ue0b6",
+          "trailing_diamond": "\ue0b0",
           "style": "diamond",
           "template": "{{ .UserName }} ",
           "type": "session"
         },
         {
           "type": "nightscout",
-          "style": "diamond",
-          "leading_diamond": "\ue0b0",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
           "foreground": "#ffffff",
           "background": "#ff0000",
           "background_templates": [
@@ -43,7 +44,6 @@
             "time_format": "15:04"
           },
           "style": "diamond",
-          "leading_diamond": "\ue0b0",
           "trailing_diamond": "\ue0b0",
           "template": " \uf4ab {{ .CurrentDate | date .Format }} ",
           "type": "time"

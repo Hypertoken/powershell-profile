@@ -51,7 +51,6 @@
         {
           "background": "#8be9fd",
           "foreground": "#f8f8f2",
-          "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
           "type": "node"

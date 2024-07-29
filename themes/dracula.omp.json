@@ -2,6 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Hypertoken/powershell-profile/main/themes/schema.json",
   "blocks": [
     {
+      "style": "diamond",
       "alignment": "left",
       "leading_diamond": "\ue0b6",
       "segments": [
@@ -29,7 +30,7 @@
             "{{ if lt .Sgv 60 }}#282a36{{ end }}",
             "#282a36"
           ],
-          "template": " {{ .Sgv }}{{ .TrendIcon }}",
+          "template": "\uF352 {{ .Sgv }}{{ .TrendIcon }}",
           "properties": {
             "url": "https://hypertoken.azurewebsites.net/api/v1/entries.json?count=1&token=posh-3be67d100bbc7c1d",
             "http_timeout": 1500

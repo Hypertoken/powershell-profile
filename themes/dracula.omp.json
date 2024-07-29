@@ -44,6 +44,7 @@
           },
           "style": "diamond",
           "template": " \uf4ab {{ .CurrentDate | date .Format }} ",
+          "leading_diamond": "\ue0b0",
           "trailing_diamond": "\ue0b0",
           "type": "time"
         },

@@ -15,6 +15,7 @@
         {
           "background": "#ff79c6",
           "foreground": "#f8f8f2",
+          "leading_diamond": "\ue0b6",
           "properties": {
             "time_format": "15:04"
           },

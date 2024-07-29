@@ -20,7 +20,7 @@
             "time_format": "15:04"
           },
           "style": "diamond",
-          "template": " \u2665 {{ .CurrentDate | date .Format }} ",
+          "template": " \uf4ab {{ .CurrentDate | date .Format }} ",
           "type": "time"
         },
         {

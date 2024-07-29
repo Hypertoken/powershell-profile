@@ -42,7 +42,7 @@
             "style": "folder"
           },
           "style": "powerline",
-          "template": "\ue5f3 {{ .Path }} ",
+          "template": "\ue5fe {{ .Path }} ",
           "type": "path"
         },
         {

@@ -14,8 +14,8 @@
         },
         {
           "type": "nightscout",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b0",
+          "style": "diamond",
+          "trailing_diamond": "\ue0b0",
           "foreground": "#ffffff",
           "background": "#ff0000",
           "background_templates": [

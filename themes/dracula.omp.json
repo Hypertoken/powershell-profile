@@ -40,7 +40,7 @@
           "leading_diamond": " \ue0b0",
           "trailing_diamond": "\ue0b0",
           "background": "#50fa7b",
-          "template": " > "
+          "template": "❯"
         },
         {
           "background": "#bd93f9",

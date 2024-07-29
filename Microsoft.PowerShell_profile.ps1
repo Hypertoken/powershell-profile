@@ -450,8 +450,8 @@ Use 'Show-Help' to display this help message.
 }
 $time = Get-Date
 $curUser = (Get-ChildItem Env:\USERNAME).Value
-Write-Host  "Greetings, " -ForegroundColor White
-Write-Host  -NoNewLine "$curUser!" -ForegroundColor Green
-Write-Host "It is: " -ForegroundColor White
-Write-Host -NoNewline "$($time.ToLongDateString())" -ForegroundColor Blue
+Write-Host -NoNewLine "Greetings, " -ForegroundColor White
+Write-Host "$curUser!" -ForegroundColor Green
+Write-Host -NoNewLine "It is: " -ForegroundColor White
+Write-Host "$($time.ToLongDateString())" -ForegroundColor Blue
 Write-Host "Use 'Show-Help' to display help" -ForegroundColor Red

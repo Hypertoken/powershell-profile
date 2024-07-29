@@ -80,7 +80,7 @@
           "background": "#ff79c6",
           "foreground": "#f8f8f2",
           "properties": {
-            "time_format": "3:04 PM"
+            "time_format": "Kitchen"
           },
           "style": "diamond",
           "trailing_diamond": "\ue0b0",

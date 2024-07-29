@@ -35,14 +35,6 @@
           }
         },
         {
-          "type": "text",
-          "style": "diamond",
-          "leading_diamond": " \ue0b0",
-          "trailing_diamond": "\ue0b0",
-          "background": "#50fa7b",
-          "template": "❯"
-        },
-        {
           "background": "#bd93f9",
           "foreground": "#f8f8f2",
           "powerline_symbol": "\ue0b0",

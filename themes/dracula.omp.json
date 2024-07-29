@@ -37,7 +37,7 @@
         {
           "background": "#ffb86c",
           "foreground": "#f8f8f2",
-          "powerline_symbol": "\ue0b0",
+          "powerline_symbol": "\ue0b4",
           "properties": {
             "branch_icon": "",
             "fetch_stash_count": true,

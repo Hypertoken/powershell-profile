@@ -38,7 +38,6 @@
         {
           "background": "#ffb86c",
           "foreground": "#f8f8f2",
-          "leading_diamond": "\ue0b0",
           "properties": {
             "branch_icon": "",
             "fetch_stash_count": true,

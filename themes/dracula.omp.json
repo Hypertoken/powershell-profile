@@ -2,9 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Hypertoken/powershell-profile/main/themes/schema.json",
   "blocks": [
     {
-      "style": "diamond",
       "alignment": "left",
-      "leading_diamond": "\ue0b6",
       "segments": [
         {
           "background": "#6272a4",

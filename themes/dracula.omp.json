@@ -10,17 +10,18 @@
           "leading_diamond": "\ue0b6",
           "style": "diamond",
           "template": "{{ .UserName }} ",
+          "trailing_diamond": "\ue0b0",
           "type": "session"
         },
         {
           "background": "#ff79c6",
           "foreground": "#f8f8f2",
-          "leading_diamond": "\ue0b6",
           "properties": {
             "time_format": "15:04"
           },
           "style": "diamond",
           "template": " \u2665 {{ .CurrentDate | date .Format }} ",
+          "trailing_diamond": "\ue0b0",
           "type": "time"
         },
         {

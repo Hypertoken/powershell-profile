@@ -15,7 +15,7 @@
         },
         {
           "type": "nightscout",
-          "style": "diamond",
+          "style": "powerline",
           "foreground": "#ffffff",
           "background": "#ff0000",
           "background_templates": [
@@ -28,7 +28,7 @@
             "{{ if lt .Sgv 60 }}#282a36{{ end }}",
             "#282a36"
           ],
-          "trailing_diamond": "\ue0b0",
+          "powerline_symbol": "\ue0b0",
           "template": " {{ .Sgv }}{{ .TrendIcon }}",
           "properties": {
             "url": "https://hypertoken.azurewebsites.net/api/v1/entries.json?count=1&token=posh-3be67d100bbc7c1d",

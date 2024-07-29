@@ -3,6 +3,8 @@
   "blocks": [
     {
       "alignment": "left",
+      "leading_diamond": "\ue0b6",
+      "trailing_diamond": "\ue0b4",
       "segments": [
         {
           "background": "#6272a4",
@@ -10,12 +12,12 @@
           "leading_diamond": "\ue0b6",
           "style": "diamond",
           "template": "{{ .UserName }} ",
-          "trailing_diamond": "\ue0b0",
           "type": "session"
         },
         {
           "type": "nightscout",
-          "style": "powerline",
+          "style": "diamond",
+          "leading_diamond": "\ue0b0",
           "foreground": "#ffffff",
           "background": "#ff0000",
           "background_templates": [
@@ -28,7 +30,6 @@
             "{{ if lt .Sgv 60 }}#282a36{{ end }}",
             "#282a36"
           ],
-          "powerline_symbol": "\ue0b0",
           "template": " {{ .Sgv }}{{ .TrendIcon }}",
           "properties": {
             "url": "https://hypertoken.azurewebsites.net/api/v1/entries.json?count=1&token=posh-3be67d100bbc7c1d",
@@ -41,15 +42,16 @@
           "properties": {
             "time_format": "15:04"
           },
-          "style": "powerline",
+          "style": "diamond",
+          "leading_diamond": "\ue0b0",
+          "trailing_diamond": "\ue0b0",
           "template": " \uf4ab {{ .CurrentDate | date .Format }} ",
-          "powerline_symbol": "\ue0b0",
           "type": "time"
         },
         {
           "background": "#bd93f9",
           "foreground": "#f8f8f2",
-          "powerline_symbol": "\ue0b4",
+          "powerline_symbol": "\ue0b0",
           "properties": {
             "style": "folder"
           },
@@ -60,7 +62,7 @@
         {
           "background": "#ffb86c",
           "foreground": "#f8f8f2",
-          "powerline_symbol": "\ue0b4",
+          "powerline_symbol": "\ue0b0",
           "properties": {
             "branch_icon": "",
             "fetch_stash_count": true,
@@ -74,29 +76,13 @@
         {
           "background": "#8be9fd",
           "foreground": "#f8f8f2",
-          "powerline_symbol": "\ue0b4",
+          "powerline_symbol": "\ue0b0",
           "style": "powerline",
           "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
           "type": "node"
         }
       ],
       "type": "prompt"
-    },
-    {
-      "alignment": "left",
-      "segments": [
-        {
-          "background": "#f1fa8c",
-          "foreground": "#282a36",
-          "invert_powerline": true,
-          "leading_diamond": "\ue0b2",
-          "style": "diamond",
-          "template": " \ue7ad {{.Profile}}{{if .Region}}@{{.Region}}{{end}}",
-          "trailing_diamond": "\ue0b4",
-          "type": "aws"
-        }
-      ],
-      "type": "rprompt"
     }
   ],
   "final_space": true,
